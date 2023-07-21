@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page of Broski</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <section class="section1">
+      <header>
+        <h1>
+          Welcom to the page of Broski!
+          <nav>
+            <ul>
+              <li class="list1">
+                <a href="https://www.google.com">🐶Google🐶</a>
+              </li>
+              <li>
+                <a href="https://www.github.com">🐶Github🐶</a>
+              </li>
+              <li>
+                <a href="#contactForm">🐶Contact Form🐶</a>
+              </li>
+            </ul>
+          </nav>
+        </h1>
+      </header>
+    </section>
+
+    <figure>
+      <button id="buttonAdult" type="button">Broski Adult</button>
+      <button id="buttonBaby" type="button">Broski Baby</button>
+      <img
+        class="picture"
+        src="./assets/images/BroskiBeach.jpeg"
+        alt="image of Broski"
+        title="Broski"
+      />
+      <figcaption class="caption">Broski enjoying a beach day!</figcaption>
+    </figure>
+
+    <section class="section2" id="contactForm">
+      <h2 class="header2">Contact Form</h2>
+      <p class="message">
+        Please fill in the form below if you want to receive updates about
+        Broski.
+      </p>
+      <form>
+        <div>
+          <p><strong>Name</strong></p>
+          <input
+            class="input-line"
+            type="text"
+            id="name"
+            name="name"
+            minlength="3"
+            maxlength="20"
+            required
+          />
+          <p><strong>Email</strong></p>
+          <input
+            class="input-line"
+            type="text"
+            id="email"
+            name="email"
+            minlength="3"
+            maxlength="20"
+            required
+          />
+          <p><strong>Address</strong></p>
+          <input
+            class="input-line"
+            type="text"
+            id="address"
+            name="address"
+            minlength="3"
+            maxlength="20"
+            required
+          />
+        </div>
+        <div><button id="buttonSend" type="button">Send</button></div>
+      </form>
+      <footer>Thank you for visiting!</footer>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
