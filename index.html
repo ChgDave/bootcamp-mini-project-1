@@ -7,83 +7,125 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
   </head>
   <body>
-    <section class="section1">
-      <header>
+    <div class="container">
+      <!-- Define header row -->
+      <div class="row header">
         <h1>
-          Welcom to the page of Broski!
-          <nav>
-            <ul>
-              <li class="list1">
-                <a href="https://www.google.com">🐶Google🐶</a>
-              </li>
-              <li>
-                <a href="https://www.github.com">🐶Github🐶</a>
-              </li>
-              <li>
-                <a href="#contactForm">🐶Contact Form🐶</a>
-              </li>
-            </ul>
-          </nav>
+          <div class="row">
+            <p>Welcom to the page of Broski!</p>
+          </div>
+          <div class="row">
+            <nav>
+              <ul>
+                <li class="list1">
+                  <a href="https://www.google.com">🐶Google🐶</a>
+                </li>
+                <li>
+                  <a href="https://www.github.com">🐶Github🐶</a>
+                </li>
+                <li>
+                  <a href="#contactForm">🐶Contact Form🐶</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </h1>
-      </header>
-    </section>
-
-    <figure>
-      <button id="buttonAdult" type="button">Broski Adult</button>
-      <button id="buttonBaby" type="button">Broski Baby</button>
-      <img
-        class="picture"
-        src="./assets/images/BroskiBeach.jpeg"
-        alt="image of Broski"
-        title="Broski"
-      />
-      <figcaption class="caption">Broski enjoying a beach day!</figcaption>
-    </figure>
-
-    <section class="section2" id="contactForm">
-      <h2 class="header2">Contact Form</h2>
-      <p class="message">
-        Please fill in the form below if you want to receive updates about
-        Broski.
-      </p>
-      <form>
-        <div>
-          <p><strong>Name</strong></p>
-          <input
-            class="input-line"
-            type="text"
-            id="name"
-            name="name"
-            minlength="3"
-            maxlength="20"
-            required
-          />
-          <p><strong>Email</strong></p>
-          <input
-            class="input-line"
-            type="text"
-            id="email"
-            name="email"
-            minlength="3"
-            maxlength="20"
-            required
-          />
-          <p><strong>Address</strong></p>
-          <input
-            class="input-line"
-            type="text"
-            id="address"
-            name="address"
-            minlength="3"
-            maxlength="20"
-            required
-          />
+      </div>
+      <!-- Define image row -->
+      <div class="row image">
+        <div class="col">
+          <button id="buttonAdult" type="button">Broski Adult</button>
         </div>
-        <div><button id="buttonSend" type="button">Send</button></div>
-      </form>
-      <footer>Thank you for visiting!</footer>
-    </section>
-
+        <div class="col">
+          <figure>
+            <img
+              class="picture"
+              src="./assets/images/BroskiBeach.jpeg"
+              alt="image of Broski"
+              title="Broski"
+            />
+            <figcaption class="caption">
+              Broski enjoying a beach day!
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col">
+          <button id="buttonBaby" type="button">Broski Baby</button>
+        </div>
+      </div>
+      <!-- Define form row -->
+      <div class="row">
+        <form id="contactForm">
+          <!-- Define contact form -->
+          <div class="row">
+            <h2 class="header2">Contact Form</h2>
+          </div>
+          <!-- Define contact form message -->
+          <div class="row">
+            <p class="message">
+              Please fill in the form below if you want to receive updates about
+              Broski.
+            </p>
+          </div>
+          <!-- Define form input name -->
+          <div class="row input">
+            <div class="col col-left">
+              <p><strong>Name</strong></p>
+            </div>
+            <div class="col col-mid">
+              <input
+                class="input-line"
+                type="text"
+                id="name"
+                name="name"
+                minlength="3"
+                maxlength="20"
+                required
+              />
+            </div>
+          </div>
+          <div class="row input">
+            <div class="col col-left">
+              <p><strong>Email</strong></p>
+            </div>
+            <div class="col col-mid">
+              <input
+                class="input-line"
+                type="text"
+                id="name"
+                name="name"
+                minlength="3"
+                maxlength="20"
+                required
+              />
+            </div>
+          </div>
+          <div class="row input">
+            <div class="col col-left">
+              <p><strong>Address</strong></p>
+            </div>
+            <div class="col col-mid">
+              <input
+                class="input-line"
+                type="text"
+                id="name"
+                name="name"
+                minlength="3"
+                maxlength="20"
+                required
+              />
+            </div>
+          </div>
+          <div class="row button">
+            <button id="buttonSend" type="button">Send</button>
+          </div>
+        </form>
+      </div>
+      <!-- Define footer row -->
+      <div class="row">
+        <footer>Thank you for visiting!</footer>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
